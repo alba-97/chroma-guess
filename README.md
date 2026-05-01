@@ -2,7 +2,7 @@
 
 An RGB color guessing game.
 
-![Chroma Guess](preview.png)
+<img width="750" height="598" alt="image" src="https://github.com/user-attachments/assets/6cfa1993-c9de-4e33-8e39-ffdc4de844c7" />
 
 ## Features
 
