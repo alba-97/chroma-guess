@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(59, 59, 59);
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+#colors {
+  width: 75%;
+  margin: auto;
+}
+
+.square {
+  width: 15%;
+  padding-bottom: 15%;
+  display: inline-block;
+  margin: 25px 10px;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s
+}
+
+#colorDisplay {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+h1 {
+  color: white;
+  background-color:#3463ad;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s
+}
+
+#message {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+#stripe {
+  background-color: white;
+  height: 30px;
+  text-align: center;
+}
+
+#menu {
+  width: 50%;
+  display:flex;
+  height: 100%;
+  margin: auto;
+}
+
+.selected {
+  background-color: #3463ad;
+  color: white;
+}
+
+#reset {
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+}
+
+#reset:hover {
+  background-color: #3463ad;
+  color: white;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+}
+
+#easyButton, #hardButton {
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+}
+
+button {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}

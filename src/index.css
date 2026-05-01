@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: linear-gradient(135deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);
+  min-height: 100vh;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #818cf8;
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #ffffff;
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-dark-card/80 backdrop-blur-xl border border-white/10;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-accent-primary text-white font-semibold rounded-xl
+           transition-all duration-300 ease-out
+           hover:bg-accent-glow hover:shadow-lg hover:shadow-accent-primary/30
+           active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-dark-elevated text-white/80 font-medium rounded-lg
+           transition-all duration-300 ease-out
+           hover:bg-dark-elevated/80 hover:text-white
+           active:scale-95;
+  }
+
+  .color-card {
+    @apply relative rounded-2xl overflow-hidden cursor-pointer
+           transition-all duration-300 ease-out
+           hover:scale-105 hover:shadow-2xl;
+  }
+
+  .stat-card {
+    @apply glass-panel rounded-xl p-4 flex flex-col items-center gap-1;
+  }
+}
